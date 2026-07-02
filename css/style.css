@@ -9,6 +9,7 @@
 
     --gold:#D4AF37;
     --gold-soft:#E6C96D;
+    --gold-dark:#7A6228;
 
     --white:#F8F8F8;
     --rose:#F6F1F3;
@@ -378,7 +379,7 @@ section{
 
 .section-title span{
 
-    color:var(--gold);
+    color:var(--gold-dark);
 
     text-transform:uppercase;
 
@@ -432,7 +433,7 @@ section{
 
 .stat-card h3{
 
-    color:var(--gold);
+    color:var(--gold-dark);
 
     font-size:3rem;
 
@@ -598,7 +599,7 @@ section{
 
 .testimonial-card p:first-child{
 
-    color:var(--gold);
+    color:var(--gold-dark);
 
     font-size:1.3rem;
 
@@ -636,7 +637,7 @@ section{
 
 .contact-info a{
 
-    color:var(--gold);
+    color:var(--gold-dark);
 
     font-weight:600;
 

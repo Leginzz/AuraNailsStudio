@@ -1,0 +1,947 @@
+/* ==========================
+   AURA NAILS STUDIO
+========================== */
+
+:root{
+
+    --black:#0F0F0F;
+    --black-light:#171717;
+
+    --gold:#D4AF37;
+    --gold-soft:#E6C96D;
+
+    --white:#F8F8F8;
+    --rose:#F6F1F3;
+
+    --gray:#8A8A8A;
+
+    --shadow:0 10px 30px rgba(0,0,0,.15);
+
+}
+
+/* ==========================
+   RESET
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:var(--white);
+
+    color:var(--black);
+
+    overflow-x:hidden;
+
+}
+
+img{
+    width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+}
+
+/* ==========================
+   CONTAINER
+========================== */
+
+.container{
+
+    width:90%;
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+/* ==========================
+   HEADER
+========================== */
+
+.header{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+
+    z-index:999;
+
+    background:rgba(15,15,15,.92);
+
+    -webkit-backdrop-filter:blur(10px);
+    backdrop-filter:blur(10px);
+
+    border-bottom:1px solid rgba(255,255,255,.05);
+
+    transition:background .3s ease,box-shadow .3s ease;
+
+}
+
+.header.scrolled{
+    background:rgba(15,15,15,0.98);
+    box-shadow:0 5px 20px rgba(0,0,0,.25);
+}
+
+.header .container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    height:95px;
+
+}
+
+.logo img{
+
+    height:90px;
+
+    width:auto;
+
+}
+
+.nav-links{
+
+    display:flex;
+
+    gap:30px;
+
+}
+
+.nav-links a{
+
+    color:white;
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:var(--gold);
+
+}
+
+.btn-header{
+
+    background:var(--gold);
+
+    color:black;
+
+    padding:12px 24px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn-header:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.menu-toggle{
+
+    display:none;
+
+    width:48px;
+
+    height:48px;
+
+    border:1px solid rgba(255,255,255,.18);
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.06);
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex-direction:column;
+
+    gap:5px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.menu-toggle span{
+
+    width:22px;
+
+    height:2px;
+
+    background:white;
+
+    border-radius:10px;
+
+    transition:.3s;
+
+}
+
+.menu-toggle:hover{
+
+    border-color:var(--gold);
+
+}
+
+.menu-toggle.active span:nth-child(1){
+
+    transform:translateY(7px) rotate(45deg);
+
+}
+
+.menu-toggle.active span:nth-child(2){
+
+    opacity:0;
+
+}
+
+.menu-toggle.active span:nth-child(3){
+
+    transform:translateY(-7px) rotate(-45deg);
+
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.hero{
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(
+    rgba(0,0,0,.70),
+    rgba(0,0,0,.75)),
+    url('../images/hero.webp');
+
+    background-size:cover;
+
+    background-position:center;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    color:white;
+
+}
+
+.hero-content{
+
+    max-width:900px;
+
+    padding:20px;
+
+}
+
+.subtitle{
+
+    color:var(--gold);
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+}
+
+.hero h1{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:5rem;
+
+    margin-top:20px;
+
+}
+
+.hero p{
+
+    font-size:1.3rem;
+
+    margin-top:20px;
+
+    color:#ddd;
+
+}
+
+.hero-buttons{
+
+    margin-top:40px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.btn-primary{
+
+    background:var(--gold);
+
+    color:black;
+
+    padding:15px 30px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-4px);
+
+}
+
+.btn-secondary{
+
+    border:2px solid white;
+
+    color:white;
+
+    padding:15px 30px;
+
+    border-radius:50px;
+
+    transition:.3s;
+
+}
+
+.btn-secondary:hover{
+
+    background:white;
+
+    color:black;
+
+}
+
+/* ==========================
+   SECCIONES
+========================== */
+
+section{
+
+    padding:100px 0;
+
+}
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.section-title span{
+
+    color:var(--gold);
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+}
+
+.section-title h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:3rem;
+
+    margin-top:10px;
+
+}
+
+/* ==========================
+   STATS
+========================== */
+
+.stats{
+
+    background:var(--rose);
+
+}
+
+.stats-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+}
+
+.stat-card{
+
+    background:white;
+
+    padding:40px;
+
+    text-align:center;
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.stat-card h3{
+
+    color:var(--gold);
+
+    font-size:3rem;
+
+}
+
+/* ==========================
+   ABOUT
+========================== */
+
+.about-text{
+
+    max-width:800px;
+
+    margin:auto;
+
+    text-align:center;
+
+    line-height:1.9;
+
+    font-size:1.1rem;
+
+}
+
+/* ==========================
+   SERVICES
+========================== */
+
+.services{
+
+    background:#fff;
+
+}
+
+.services-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:30px;
+
+}
+
+.service-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+    transition:.4s;
+
+}
+
+.service-card:hover{
+
+    transform:translateY(-10px);
+
+    border:1px solid var(--gold);
+
+}
+
+.service-card h3{
+
+    font-size:1.2rem;
+
+}
+
+/* ==========================
+   GALERIA
+========================== */
+
+.gallery{
+
+    background:var(--rose);
+
+}
+
+.gallery-grid{
+
+    columns:3 250px;
+
+    gap:15px;
+
+}
+
+.gallery-grid img{
+
+    margin-bottom:15px;
+
+    border-radius:20px;
+
+    transition:.4s;
+
+}
+
+.gallery-grid img:hover{
+
+    transform:scale(1.03);
+
+}
+
+/* ==========================
+   CTA
+========================== */
+
+.cta{
+
+    background:var(--black);
+
+    text-align:center;
+
+    color:white;
+
+}
+
+.cta h2{
+
+    font-size:3rem;
+
+    font-family:'Cormorant Garamond',serif;
+
+}
+
+.cta p{
+
+    margin:20px 0 40px;
+
+    color:#ccc;
+
+}
+
+/* ==========================
+   TESTIMONIOS
+========================== */
+
+.testimonial-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:30px;
+
+}
+
+.testimonial-card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.testimonial-card p:first-child{
+
+    color:var(--gold);
+
+    font-size:1.3rem;
+
+    margin-bottom:15px;
+
+}
+
+/* ==========================
+   CONTACTO
+========================== */
+
+.contact{
+
+    background:var(--rose);
+
+}
+
+.contact-info{
+
+    max-width:700px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.contact-info p{
+
+    margin-bottom:20px;
+
+    font-size:1.1rem;
+
+}
+
+.contact-info a{
+
+    color:var(--gold);
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.contact-info a:hover{
+
+    color:var(--black);
+
+}
+
+.location-block{
+
+    margin-top:35px;
+
+    padding-top:30px;
+
+    border-top:1px solid rgba(15,15,15,.08);
+
+}
+
+.location-block h3{
+
+    font-family:'Cormorant Garamond',serif;
+
+    color:var(--black);
+
+    font-size:2rem;
+
+    margin-bottom:18px;
+
+}
+
+.map-wrapper{
+
+    margin-top:35px;
+
+    overflow:hidden;
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow);
+
+    border:1px solid rgba(212,175,55,.25);
+
+}
+
+.map-wrapper iframe{
+
+    width:100%;
+
+    height:360px;
+
+    display:block;
+
+    border:0;
+
+    filter:saturate(.9) contrast(.98);
+
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+.footer{
+
+    background:var(--black);
+
+    color:white;
+
+    text-align:center;
+
+    padding:60px 20px;
+
+}
+
+.footer h3{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:2rem;
+
+    margin-bottom:10px;
+
+}
+
+.footer p{
+
+    color:#bbb;
+
+}
+
+/* ==========================
+   WHATSAPP
+========================== */
+
+.whatsapp-float{
+
+    position:fixed;
+
+    right:24px;
+
+    bottom:24px;
+
+    width:64px;
+
+    height:64px;
+
+    border-radius:50%;
+
+    background:#25D366;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:white;
+
+    box-shadow:0 12px 28px rgba(15,15,15,.22);
+
+    z-index:999;
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        background .3s ease;
+
+}
+
+.whatsapp-float svg{
+
+    width:34px;
+
+    height:34px;
+
+    fill:currentColor;
+
+}
+
+.whatsapp-float:hover{
+
+    background:#20BD5A;
+
+    transform:translateY(-5px) scale(1.04);
+
+    box-shadow:0 18px 35px rgba(15,15,15,.28);
+
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+    .hero h1{
+
+        font-size:3rem;
+
+    }
+
+    .section-title h2{
+
+        font-size:2.2rem;
+
+    }
+
+    .nav-links{
+
+        position:absolute;
+
+        top:95px;
+
+        left:5%;
+
+        right:5%;
+
+        display:flex;
+
+        flex-direction:column;
+
+        gap:0;
+
+        padding:18px;
+
+        background:rgba(15,15,15,.98);
+
+        border:1px solid rgba(212,175,55,.22);
+
+        border-radius:18px;
+
+        box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+        opacity:0;
+
+        visibility:hidden;
+
+        transform:translateY(-12px);
+
+        transition:.3s;
+
+    }
+
+    .nav-links.active{
+
+        opacity:1;
+
+        visibility:visible;
+
+        transform:translateY(0);
+
+    }
+
+    .nav-links li{
+
+        width:100%;
+
+    }
+
+    .nav-links a{
+
+        display:block;
+
+        padding:14px 10px;
+
+        text-align:center;
+
+        border-radius:12px;
+
+    }
+
+    .nav-links a:hover{
+
+        background:rgba(212,175,55,.12);
+
+    }
+
+    .btn-header{
+
+        display:none;
+
+    }
+
+    .menu-toggle{
+
+        display:flex;
+
+    }
+
+    .map-wrapper iframe{
+
+        height:300px;
+
+    }
+
+    .whatsapp-float{
+
+        right:18px;
+
+        bottom:18px;
+
+        width:58px;
+
+        height:58px;
+
+    }
+
+    .whatsapp-float svg{
+
+        width:31px;
+
+        height:31px;
+
+    }
+
+}
+/* ==========================
+   ANIMACIONES
+========================== */
+
+.service-card,
+.stat-card,
+.testimonial-card,
+.section-title,
+.about-text {
+
+    opacity: 0;
+
+    transform: translateY(40px);
+
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+
+}
+
+.show {
+
+    opacity: 1 !important;
+
+    transform: translateY(0) !important;
+
+}

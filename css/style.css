@@ -444,7 +444,7 @@ section{
 
     text-align:center;
 
-    border-radius:20px;
+    border-radius:16px;
 
     box-shadow:var(--shadow);
 
@@ -500,7 +500,7 @@ section{
 
     background:white;
 
-    border-radius:20px;
+    border-radius:16px;
 
     padding:35px;
 
@@ -548,7 +548,7 @@ section{
 
     margin-bottom:15px;
 
-    border-radius:20px;
+    border-radius:12px;
 
     transition:.4s;
 
@@ -610,7 +610,7 @@ section{
 
     padding:30px;
 
-    border-radius:20px;
+    border-radius:16px;
 
     box-shadow:var(--shadow);
 
@@ -698,7 +698,7 @@ section{
 
     overflow:hidden;
 
-    border-radius:20px;
+    border-radius:16px;
 
     box-shadow:var(--shadow);
 

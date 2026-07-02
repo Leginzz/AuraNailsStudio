@@ -3,10 +3,10 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/',
+  base: '/AuraNailsStudio/design-lab/',
   server: {
     port: 5173,
-    open: '/design-lab'
+    open: '/AuraNailsStudio/design-lab/'
   },
   build: {
     outDir: 'dist',

@@ -38,6 +38,8 @@ body{
 
     font-family:'Poppins',sans-serif;
 
+    font-size:16px;
+
     background:var(--white);
 
     color:var(--black);
@@ -53,6 +55,20 @@ img{
 
 a{
     text-decoration:none;
+}
+
+a:focus-visible,
+button:focus-visible,
+.menu-toggle:focus-visible,
+.btn-header:focus-visible,
+.btn-primary:focus-visible,
+.btn-secondary:focus-visible,
+.whatsapp-float:focus-visible{
+
+    outline:2px solid var(--gold-dark);
+
+    outline-offset:3px;
+
 }
 
 ul{

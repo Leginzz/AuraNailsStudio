@@ -919,29 +919,49 @@ section{
 
 }
 /* ==========================
-   ANIMACIONES
+    ANIMACIONES
 ========================== */
 
-.service-card,
-.stat-card,
-.testimonial-card,
-.section-title,
-.about-text {
+@media (prefers-reduced-motion: no-preference) {
 
-    opacity: 0;
+    .service-card,
+    .stat-card,
+    .testimonial-card,
+    .section-title,
+    .about-text {
 
-    transform: translateY(40px);
+        opacity: 0;
 
-    transition:
-        opacity .8s ease,
-        transform .8s ease;
+        transform: translateY(40px);
+
+        transition:
+            opacity .8s ease,
+            transform .8s ease;
+
+    }
+
+    .show {
+
+        opacity: 1 !important;
+
+        transform: translateY(0) !important;
+
+    }
 
 }
 
-.show {
+@media (prefers-reduced-motion: reduce) {
 
-    opacity: 1 !important;
+    .service-card,
+    .stat-card,
+    .testimonial-card,
+    .section-title,
+    .about-text {
 
-    transform: translateY(0) !important;
+        opacity: 1;
+
+        transform: none;
+
+    }
 
 }

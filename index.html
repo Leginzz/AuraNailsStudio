@@ -18,6 +18,8 @@
     <link rel="icon" type="image/png" href="images/logo.png">
     <link rel="apple-touch-icon" href="images/logo.png">
 
+    <meta name="theme-color" content="#0F0F0F">
+
     <link rel="stylesheet" href="css/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,7 +35,6 @@
     "image": "https://auranails.studio/images/logo.png",
     "url": "https://auranails.studio",
     "telephone": "+527831377679",
-    "email": "",
     "description": "Uñas acrílicas, polygel, gel semipermanente, nail art, manicure y pedicure en Tuxpan, Veracruz.",
     "address": {
         "@type": "PostalAddress",
@@ -83,6 +84,7 @@
                     <li><a href="#servicios">Servicios</a></li>
                     <li><a href="#galeria">Galería</a></li>
                     <li><a href="#contacto">Contacto</a></li>
+                    <li class="nav-mobile-only"><a href="https://wa.me/527831377679" target="_blank">Agendar Cita</a></li>
                 </ul>
 
             </nav>
@@ -115,8 +117,6 @@
     <!-- HERO -->
 
     <section id="inicio" class="hero">
-
-        <div class="hero-overlay"></div>
 
         <div class="hero-content">
 
@@ -231,38 +231,47 @@
 
                 <div class="service-card">
                     <h3>💅 Uñas Acrílicas</h3>
+                    <span class="service-price">$650</span>
                 </div>
 
                 <div class="service-card">
                     <h3>💎 Polygel</h3>
+                    <span class="service-price">$850</span>
                 </div>
 
                 <div class="service-card">
                     <h3>✨ Gel Semipermanente</h3>
+                    <span class="service-price">$450</span>
                 </div>
 
                 <div class="service-card">
                     <h3>🎨 Nail Art</h3>
+                    <span class="service-price">Desde $350</span>
                 </div>
 
                 <div class="service-card">
                     <h3>🦶 Pedicure</h3>
+                    <span class="service-price">$350</span>
                 </div>
 
                 <div class="service-card">
                     <h3>🤍 Manicure</h3>
+                    <span class="service-price">$250</span>
                 </div>
 
                 <div class="service-card">
                     <h3>🔄 Retiro de Acrílico</h3>
+                    <span class="service-price">$300</span>
                 </div>
 
                 <div class="service-card">
                     <h3>💎 Aplicación de Piedrería</h3>
+                    <span class="service-price">Desde $150</span>
                 </div>
 
                 <div class="service-card">
                     <h3>⭐ Diseños Personalizados</h3>
+                    <span class="service-price">Consultar</span>
                 </div>
 
             </div>
@@ -291,27 +300,27 @@
 
                 <picture>
                     <source srcset="images/gallery1.webp" type="image/webp">
-                    <img src="images/gallery1.jpg" alt="Uñas acrílicas con diseño elegante - Aura Nails Studio" loading="lazy">
+                    <img src="images/gallery1.jpg" alt="Uñas acrílicas con diseño elegante - Aura Nails Studio" width="600" height="750" loading="lazy">
                 </picture>
                 <picture>
                     <source srcset="images/gallery2.webp" type="image/webp">
-                    <img src="images/gallery2.jpg" alt="Nail art con pedrería y detalles dorados - Aura Nails Studio" loading="lazy">
+                    <img src="images/gallery2.jpg" alt="Nail art con pedrería y detalles dorados - Aura Nails Studio" width="600" height="750" loading="lazy">
                 </picture>
                 <picture>
                     <source srcset="images/gallery3.webp" type="image/webp">
-                    <img src="images/gallery3.jpg" alt="Diseño de uñas en tonos nude con acabado brillante - Aura Nails Studio" loading="lazy">
+                    <img src="images/gallery3.jpg" alt="Diseño de uñas en tonos nude con acabado brillante - Aura Nails Studio" width="600" height="750" loading="lazy">
                 </picture>
                 <picture>
                     <source srcset="images/gallery4.webp" type="image/webp">
-                    <img src="images/gallery4.jpg" alt="Uñas acrílicas con técnica polygel - Aura Nails Studio" loading="lazy">
+                    <img src="images/gallery4.jpg" alt="Uñas acrílicas con técnica polygel - Aura Nails Studio" width="600" height="750" loading="lazy">
                 </picture>
                 <picture>
                     <source srcset="images/gallery5.webp" type="image/webp">
-                    <img src="images/gallery5.jpg" alt="Manicure con diseños personalizados - Aura Nails Studio" loading="lazy">
+                    <img src="images/gallery5.jpg" alt="Manicure con diseños personalizados - Aura Nails Studio" width="600" height="750" loading="lazy">
                 </picture>
                 <picture>
                     <source srcset="images/gallery6.webp" type="image/webp">
-                    <img src="images/gallery6.jpg" alt="Uñas decoradas con flores y detalles artísticos - Aura Nails Studio" loading="lazy">
+                    <img src="images/gallery6.jpg" alt="Uñas decoradas con flores y detalles artísticos - Aura Nails Studio" width="600" height="750" loading="lazy">
                 </picture>
 
             </div>
@@ -368,16 +377,19 @@
                 <div class="testimonial-card">
                     <p>★★★★★</p>
                     <p>Excelente atención y diseños hermosos.</p>
+                    <span class="testimonial-name">— María G.</span>
                 </div>
 
                 <div class="testimonial-card">
                     <p>★★★★★</p>
                     <p>Mis uñas duraron perfectas por semanas.</p>
+                    <span class="testimonial-name">— Ana L.</span>
                 </div>
 
                 <div class="testimonial-card">
                     <p>★★★★★</p>
                     <p>Profesionalismo y calidad en cada detalle.</p>
+                    <span class="testimonial-name">— Carolina R.</span>
                 </div>
 
             </div>
@@ -466,6 +478,55 @@
                     </iframe>
 
                 </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FAQ -->
+
+    <section class="faq">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>FAQ</span>
+
+                <h2>
+                    Preguntas Frecuentes
+                </h2>
+
+            </div>
+
+            <div class="faq-list">
+
+                <details class="faq-item" open>
+                    <summary>¿Cuánto duran las uñas acrílicas?</summary>
+                    <p>Duran de 2 a 3 semanas. Recomendamos retocar cada 3 semanas para mantenerlas impecables.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>¿Duele aplicarse las uñas?</summary>
+                    <p>No. El proceso es indoloro. Solo sentirás presión leve al limar la superficie natural.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>¿Cuánto tiempo dura una cita?</summary>
+                    <p>Depende del servicio: manicure ~45 min, acrílicas ~2 hrs, polygel ~2.5 hrs.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>¿Aceptan tarjeta de crédito/débito?</summary>
+                    <p>Sí, aceptamos efectivo, transferencia y tarjetas de crédito/débito.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>¿Cómo agendo una cita?</summary>
+                    <p>Escríbenos al <a href="https://wa.me/527831377679">WhatsApp</a> y te confirmamos horario disponible.</p>
+                </details>
 
             </div>
 

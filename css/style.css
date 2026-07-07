@@ -46,6 +46,8 @@ body{
 
     overflow-x:hidden;
 
+    padding-top:95px;
+
 }
 
 img{
@@ -161,6 +163,12 @@ ul{
 .nav-links a:hover{
 
     color:var(--gold);
+
+}
+
+.nav-mobile-only{
+
+    display:none;
 
 }
 
@@ -524,6 +532,38 @@ section{
 
     font-size:1.2rem;
 
+    margin-bottom:8px;
+
+}
+
+.service-price{
+
+    display:inline-block;
+
+    font-size:1.1rem;
+
+    font-weight:600;
+
+    color:var(--gold-dark);
+
+    background:rgba(212,175,55,.08);
+
+    padding:4px 14px;
+
+    border-radius:50px;
+
+}
+
+.testimonial-name{
+
+    display:block;
+
+    font-size:.85rem;
+
+    color:var(--gray);
+
+    margin-top:10px;
+
 }
 
 /* ==========================
@@ -542,6 +582,11 @@ section{
 
     gap:15px;
 
+}
+
+.gallery-grid picture{
+    break-inside:avoid;
+    display:block;
 }
 
 .gallery-grid img{
@@ -721,6 +766,71 @@ section{
 }
 
 /* ==========================
+   FAQ
+========================== */
+
+.faq{
+    background:var(--rose);
+}
+
+.faq-list{
+    max-width:740px;
+    margin:auto;
+}
+
+.faq-item{
+    background:white;
+    border:1px solid rgba(15,15,15,.06);
+    border-radius:16px;
+    margin-bottom:12px;
+    overflow:hidden;
+    transition:border-color .3s;
+}
+
+.faq-item[open]{
+    border-color:var(--gold);
+}
+
+.faq-item summary{
+    padding:18px 22px;
+    font-weight:600;
+    cursor:pointer;
+    list-style:none;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    transition:color .3s;
+}
+
+.faq-item summary::-webkit-details-marker{
+    display:none;
+}
+
+.faq-item summary::after{
+    content:'+';
+    font-size:1.3rem;
+    color:var(--gold-dark);
+    font-weight:300;
+    transition:transform .3s;
+}
+
+.faq-item[open] summary::after{
+    content:'−';
+}
+
+.faq-item p{
+    padding:0 22px 18px;
+    color:#555;
+    line-height:1.7;
+    font-size:.95rem;
+}
+
+.faq-item a{
+    color:var(--gold-dark);
+    font-weight:600;
+}
+
+/* ==========================
    FOOTER
 ========================== */
 
@@ -797,6 +907,46 @@ section{
     height:34px;
 
     fill:currentColor;
+
+}
+
+@media (prefers-color-scheme: dark) {
+
+    body{
+
+        background:var(--black);
+
+        color:var(--white);
+
+    }
+
+    .services{background:#1a1a1a;}
+
+    .service-card{background:#222;}
+
+    .testimonial-card{background:#222;}
+
+    .stat-card{background:#222;}
+
+    .stat-card p{color:#bbb;}
+
+    .stats,.gallery,.contact,.faq{background:#151515;}
+
+    .location-block{border-top-color:rgba(255,255,255,.08);}
+
+    .contact-info a:hover{color:var(--white);}
+
+    .faq-item{
+
+        background:#1a1a1a;
+
+        border-color:#2a2a2a;
+
+    }
+
+    .faq-item summary{color:var(--white);}
+
+    .faq-item p{color:#bbb;}
 
 }
 
@@ -907,6 +1057,28 @@ section{
     .menu-toggle{
 
         display:flex;
+
+    }
+
+    .nav-mobile-only{
+
+        display:block;
+
+    }
+
+    .nav-mobile-only a{
+
+        background:var(--gold);
+
+        color:black !important;
+
+        font-weight:600;
+
+    }
+
+    .nav-mobile-only a:hover{
+
+        background:var(--gold-soft) !important;
 
     }
 

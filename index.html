@@ -1,32 +1,22 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Aura Nails Studio | Uñas Acrílicas y Nail Art en Tuxpan</title>
-
     <meta name="description" content="Aura Nails Studio ofrece uñas acrílicas, polygel, gel semipermanente, nail art, manicure y pedicure con acabados profesionales y atención personalizada.">
-
     <meta name="keywords" content="uñas acrílicas, polygel, nail art, manicure, pedicure, uñas, salón de uñas">
-
     <meta property="og:title" content="Aura Nails Studio">
     <meta property="og:description" content="El lujo comienza en tus manos, una obra de arte a la vez.">
     <meta property="og:image" content="images/hero.jpg">
     <meta property="og:type" content="website">
-
     <link rel="icon" type="image/png" href="images/logo.png">
     <link rel="apple-touch-icon" href="images/logo.png">
-
-    <meta name="theme-color" content="#0F0F0F">
-
+    <meta name="theme-color" id="theme-color" content="#0F0F0F">
     <link rel="stylesheet" href="css/style.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
@@ -63,518 +53,248 @@
 }
 </script>
 </head>
-
 <body>
-
     <!-- HEADER -->
-
     <header class="header">
-
         <div class="container">
-
             <a href="#inicio" class="logo">
                 <img src="images/logo.png" alt="Aura Nails Studio">
             </a>
-
             <nav class="navbar">
-
                 <ul class="nav-links">
                     <li><a href="#inicio">Inicio</a></li>
                     <li><a href="#nosotros">Nosotros</a></li>
                     <li><a href="#servicios">Servicios</a></li>
                     <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#promociones">Promociones</a></li>
                     <li><a href="#contacto">Contacto</a></li>
+                    <li class="theme-toggle-li">
+                        <button class="theme-toggle" aria-label="Cambiar modo oscuro/claro" type="button">
+                            <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="5"/>
+                                <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                            </svg>
+                            <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                            </svg>
+                        </button>
+                    </li>
                     <li class="nav-mobile-only"><a href="https://wa.me/527831377679" target="_blank">Agendar Cita</a></li>
                 </ul>
-
             </nav>
-
-            <a
-                href="https://wa.me/527831377679"
-                class="btn-header"
-                target="_blank">
-
-                Agendar Cita
-
-            </a>
-
-            <button
-                class="menu-toggle"
-                type="button"
-                aria-label="Abrir menú"
-                aria-expanded="false">
-
+            <a href="https://wa.me/527831377679" class="btn-header" target="_blank">Agendar Cita</a>
+            <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
-
             </button>
-
         </div>
-
     </header>
-
     <!-- HERO -->
-
     <section id="inicio" class="hero">
-
         <div class="hero-content">
-
-            <span class="subtitle">
-                Bienvenida a
-            </span>
-
-            <h1>
-                Aura Nails Studio
-            </h1>
-
-            <p>
-                El lujo comienza en tus manos,
-                una obra de arte a la vez.
-            </p>
-
+            <span class="subtitle">Bienvenida a</span>
+            <h1>Aura Nails Studio</h1>
+            <p>El lujo comienza en tus manos, una obra de arte a la vez.</p>
             <div class="hero-buttons">
-
-                <a
-                    href="https://wa.me/527831377679"
-                    target="_blank"
-                    class="btn-primary">
-
-                    Agendar por WhatsApp
-
-                </a>
-
-                <a
-                    href="#servicios"
-                    class="btn-secondary">
-
-                    Ver Servicios
-
-                </a>
-
+                <a href="https://wa.me/527831377679" target="_blank" class="btn-primary">Agendar por WhatsApp</a>
+                <a href="#servicios" class="btn-secondary">Ver Servicios</a>
             </div>
-
         </div>
-
     </section>
-
     <!-- ESTADÍSTICAS -->
-
     <section class="stats">
-
         <div class="container stats-grid">
-
-            <div class="stat-card">
-                <h3>500+</h3>
-                <p>Diseños Realizados</p>
-            </div>
-
-            <div class="stat-card">
-                <h3>100+</h3>
-                <p>Clientas Satisfechas</p>
-            </div>
-
-            <div class="stat-card">
-                <h3>5★</h3>
-                <p>Atención Personalizada</p>
-            </div>
-
+            <div class="stat-card"><h3>500+</h3><p>Diseños Realizados</p></div>
+            <div class="stat-card"><h3>100+</h3><p>Clientas Satisfechas</p></div>
+            <div class="stat-card"><h3>5★</h3><p>Atención Personalizada</p></div>
         </div>
-
     </section>
-
     <!-- NOSOTROS -->
-
     <section id="nosotros" class="about">
-
         <div class="container">
-
             <div class="section-title">
-
                 <span>Sobre Nosotros</span>
-
-                <h2>
-                    Tu belleza, nuestra inspiración
-                </h2>
-
+                <h2>Tu belleza, nuestra inspiración</h2>
             </div>
-
-            <p class="about-text">
-
-                En Aura Nails Studio transformamos cada servicio en una experiencia única.
-                Nos especializamos en diseños personalizados, técnicas modernas y acabados
-                impecables que reflejan elegancia, estilo y sofisticación.
-
-            </p>
-
+            <p class="about-text">En Aura Nails Studio transformamos cada servicio en una experiencia única. Nos especializamos en diseños personalizados, técnicas modernas y acabados impecables que reflejan elegancia, estilo y sofisticación.</p>
         </div>
-
     </section>
-
     <!-- SERVICIOS -->
-
     <section id="servicios" class="services">
-
         <div class="container">
-
             <div class="section-title">
-
                 <span>Servicios</span>
-
-                <h2>
-                    Diseñados para destacar tu estilo
-                </h2>
-
+                <h2>Diseñados para destacar tu estilo</h2>
             </div>
-
             <div class="services-grid">
-
-                <div class="service-card">
-                    <h3>💅 Uñas Acrílicas</h3>
-                    <span class="service-price">$650</span>
-                </div>
-
-                <div class="service-card">
-                    <h3>💎 Polygel</h3>
-                    <span class="service-price">$850</span>
-                </div>
-
-                <div class="service-card">
-                    <h3>✨ Gel Semipermanente</h3>
-                    <span class="service-price">$450</span>
-                </div>
-
-                <div class="service-card">
-                    <h3>🎨 Nail Art</h3>
-                    <span class="service-price">Desde $350</span>
-                </div>
-
-                <div class="service-card">
-                    <h3>🦶 Pedicure</h3>
-                    <span class="service-price">$350</span>
-                </div>
-
-                <div class="service-card">
-                    <h3>🤍 Manicure</h3>
-                    <span class="service-price">$250</span>
-                </div>
-
-                <div class="service-card">
-                    <h3>🔄 Retiro de Acrílico</h3>
-                    <span class="service-price">$300</span>
-                </div>
-
-                <div class="service-card">
-                    <h3>💎 Aplicación de Piedrería</h3>
-                    <span class="service-price">Desde $150</span>
-                </div>
-
-                <div class="service-card">
-                    <h3>⭐ Diseños Personalizados</h3>
-                    <span class="service-price">Consultar</span>
-                </div>
-
+                <div class="service-card"><h3>💅 Uñas Acrílicas</h3><span class="service-price">$650</span></div>
+                <div class="service-card"><h3>💎 Polygel</h3><span class="service-price">$850</span></div>
+                <div class="service-card"><h3>✨ Gel Semipermanente</h3><span class="service-price">$450</span></div>
+                <div class="service-card"><h3>🎨 Nail Art</h3><span class="service-price">Desde $350</span></div>
+                <div class="service-card"><h3>🦶 Pedicure</h3><span class="service-price">$350</span></div>
+                <div class="service-card"><h3>🤍 Manicure</h3><span class="service-price">$250</span></div>
+                <div class="service-card"><h3>🔄 Retiro de Acrílico</h3><span class="service-price">$300</span></div>
+                <div class="service-card"><h3>💎 Aplicación de Piedrería</h3><span class="service-price">Desde $150</span></div>
+                <div class="service-card"><h3>⭐ Diseños Personalizados</h3><span class="service-price">Consultar</span></div>
             </div>
-
         </div>
-
     </section>
-
     <!-- GALERÍA -->
-
     <section id="galeria" class="gallery">
-
         <div class="container">
-
             <div class="section-title">
-
                 <span>Galería</span>
-
-                <h2>
-                    Nuestros Trabajos
-                </h2>
-
+                <h2>Nuestros Trabajos</h2>
             </div>
-
             <div class="gallery-grid">
-
-                <picture>
-                    <source srcset="images/gallery1.webp" type="image/webp">
-                    <img src="images/gallery1.jpg" alt="Uñas acrílicas con diseño elegante - Aura Nails Studio" width="600" height="750" loading="lazy">
-                </picture>
-                <picture>
-                    <source srcset="images/gallery2.webp" type="image/webp">
-                    <img src="images/gallery2.jpg" alt="Nail art con pedrería y detalles dorados - Aura Nails Studio" width="600" height="750" loading="lazy">
-                </picture>
-                <picture>
-                    <source srcset="images/gallery3.webp" type="image/webp">
-                    <img src="images/gallery3.jpg" alt="Diseño de uñas en tonos nude con acabado brillante - Aura Nails Studio" width="600" height="750" loading="lazy">
-                </picture>
-                <picture>
-                    <source srcset="images/gallery4.webp" type="image/webp">
-                    <img src="images/gallery4.jpg" alt="Uñas acrílicas con técnica polygel - Aura Nails Studio" width="600" height="750" loading="lazy">
-                </picture>
-                <picture>
-                    <source srcset="images/gallery5.webp" type="image/webp">
-                    <img src="images/gallery5.jpg" alt="Manicure con diseños personalizados - Aura Nails Studio" width="600" height="750" loading="lazy">
-                </picture>
-                <picture>
-                    <source srcset="images/gallery6.webp" type="image/webp">
-                    <img src="images/gallery6.jpg" alt="Uñas decoradas con flores y detalles artísticos - Aura Nails Studio" width="600" height="750" loading="lazy">
-                </picture>
-
+                <picture><source srcset="images/gallery1.webp" type="image/webp"><img src="images/gallery1.jpg" alt="Uñas acrílicas con diseño elegante - Aura Nails Studio" width="600" height="750" loading="lazy"></picture>
+                <picture><source srcset="images/gallery2.webp" type="image/webp"><img src="images/gallery2.jpg" alt="Nail art con pedrería y detalles dorados - Aura Nails Studio" width="600" height="750" loading="lazy"></picture>
+                <picture><source srcset="images/gallery3.webp" type="image/webp"><img src="images/gallery3.jpg" alt="Diseño de uñas en tonos nude con acabado brillante - Aura Nails Studio" width="600" height="750" loading="lazy"></picture>
+                <picture><source srcset="images/gallery4.webp" type="image/webp"><img src="images/gallery4.jpg" alt="Uñas acrílicas con técnica polygel - Aura Nails Studio" width="600" height="750" loading="lazy"></picture>
+                <picture><source srcset="images/gallery5.webp" type="image/webp"><img src="images/gallery5.jpg" alt="Manicure con diseños personalizados - Aura Nails Studio" width="600" height="750" loading="lazy"></picture>
+                <picture><source srcset="images/gallery6.webp" type="image/webp"><img src="images/gallery6.jpg" alt="Uñas decoradas con flores y detalles artísticos - Aura Nails Studio" width="600" height="750" loading="lazy"></picture>
             </div>
-
         </div>
-
     </section>
-
     <!-- CTA -->
-
     <section class="cta">
-
         <div class="container">
-
-            <h2>
-                ¿Lista para lucir unas uñas increíbles?
-            </h2>
-
-            <p>
-                Agenda tu cita hoy mismo y déjanos crear una obra de arte en tus manos.
-            </p>
-
-            <a
-                href="https://wa.me/527831377679"
-                target="_blank"
-                class="btn-primary">
-
-                Reservar Ahora
-
-            </a>
-
+            <h2>¿Lista para lucir unas uñas increíbles?</h2>
+            <p>Agenda tu cita hoy mismo y déjanos crear una obra de arte en tus manos.</p>
+            <a href="https://wa.me/527831377679" target="_blank" class="btn-primary">Reservar Ahora</a>
         </div>
-
     </section>
-
     <!-- TESTIMONIOS -->
-
     <section class="testimonials">
-
         <div class="container">
-
             <div class="section-title">
-
                 <span>Testimonios</span>
-
-                <h2>
-                    Lo que dicen nuestras clientas
-                </h2>
-
+                <h2>Lo que dicen nuestras clientas</h2>
             </div>
-
             <div class="testimonial-grid">
-
-                <div class="testimonial-card">
-                    <p>★★★★★</p>
-                    <p>Excelente atención y diseños hermosos.</p>
-                    <span class="testimonial-name">— María G.</span>
-                </div>
-
-                <div class="testimonial-card">
-                    <p>★★★★★</p>
-                    <p>Mis uñas duraron perfectas por semanas.</p>
-                    <span class="testimonial-name">— Ana L.</span>
-                </div>
-
-                <div class="testimonial-card">
-                    <p>★★★★★</p>
-                    <p>Profesionalismo y calidad en cada detalle.</p>
-                    <span class="testimonial-name">— Carolina R.</span>
-                </div>
-
+                <div class="testimonial-card"><p>★★★★★</p><p>Excelente atención y diseños hermosos.</p><span class="testimonial-name">— María G.</span></div>
+                <div class="testimonial-card"><p>★★★★★</p><p>Mis uñas duraron perfectas por semanas.</p><span class="testimonial-name">— Ana L.</span></div>
+                <div class="testimonial-card"><p>★★★★★</p><p>Profesionalismo y calidad en cada detalle.</p><span class="testimonial-name">— Carolina R.</span></div>
             </div>
-
         </div>
-
     </section>
-
+    <!-- PROMOCIONES -->
+    <section id="promociones" class="promos">
+        <div class="container">
+            <div class="section-title">
+                <span>Promociones</span>
+                <h2>Paquetes Especiales</h2>
+            </div>
+            <div class="promos-grid">
+                <div class="promo-card">
+                    <div class="promo-header">
+                        <h3 class="promo-title">Dúo Perfecto</h3>
+                        <span class="promo-price">$499</span>
+                    </div>
+                    <ul class="promo-list">
+                        <li>Manicure completo</li>
+                        <li>Pedicure completo</li>
+                        <li>Esmaltado semipermanente en manos y pies</li>
+                    </ul>
+                    <p class="promo-vigencia">Vigencia: Julio 2026</p>
+                </div>
+                <div class="promo-card">
+                    <div class="promo-header">
+                        <h3 class="promo-title">Relleno + Gelish</h3>
+                        <span class="promo-price">$549</span>
+                    </div>
+                    <ul class="promo-list">
+                        <li>Relleno de uñas acrílicas</li>
+                        <li>Esmaltado gelish</li>
+                        <li>Diseño sólido incluido</li>
+                    </ul>
+                    <p class="promo-vigencia">Vigencia: Julio 2026</p>
+                </div>
+                <div class="promo-card">
+                    <div class="promo-header">
+                        <h3 class="promo-title">Retiro + Nuevo Set</h3>
+                        <span class="promo-price">$599</span>
+                    </div>
+                    <ul class="promo-list">
+                        <li>Retiro de acrílico</li>
+                        <li>Uñas acrílicas nuevas</li>
+                        <li>Esmaltado gelish + diseño sólido</li>
+                    </ul>
+                    <p class="promo-vigencia">Vigencia: Julio 2026</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- CONTACTO -->
-
     <section id="contacto" class="contact">
-
         <div class="container">
-
             <div class="section-title">
-
                 <span>Contacto</span>
-
-                <h2>
-                    Agenda tu próxima cita
-                </h2>
-
+                <h2>Agenda tu próxima cita</h2>
             </div>
-
             <div class="contact-info">
-
-                <p>
-                    📱 WhatsApp:
-                    <a
-                        href="https://wa.me/527831377679?text=Hola%20Aura%20Nails%20Studio,%20me%20gustar%C3%ADa%20agendar%20una%20cita."
-                        target="_blank">
-
-                        +52 783 137 7679
-
-                    </a>
-                </p>
-
-                <p>
-                    📷 Instagram:
-                    <a
-                        href="https://www.instagram.com/auranails___studio/"
-                        target="_blank">
-
-                        @auranails___studio
-
-                    </a>
-                </p>
-
-                <p>
-                    👍 Facebook:
-                    <a
-                        href="https://www.facebook.com/search/top?q=Aura%20Nails%20Studio"
-                        target="_blank">
-
-                        Aura Nails Studio
-
-                    </a>
-                </p>
-
-                <p>
-                    🕘 Horario:
-                    Lun – Sáb 9:00 AM – 7:00 PM
-                </p>
-
+                <p>📱 WhatsApp: <a href="https://wa.me/527831377679?text=Hola%20Aura%20Nails%20Studio,%20me%20gustar%C3%ADa%20agendar%20una%20cita." target="_blank">+52 783 137 7679</a></p>
+                <p>📷 Instagram: <a href="https://www.instagram.com/auranails___studio/" target="_blank">@auranails___studio</a></p>
+                <p>👍 Facebook: <a href="https://www.facebook.com/search/top?q=Aura%20Nails%20Studio" target="_blank">Aura Nails Studio</a></p>
+                <p>🕘 Horario: Lun – Sáb 9:00 AM – 7:00 PM</p>
                 <div class="location-block">
-
                     <h3>Ubicación</h3>
-
-                    <p>
-                        Atención en Tuxpan, Veracruz.
-                    </p>
-
-                    <p>
-                        Ubicación exacta disponible al confirmar cita.
-                    </p>
-
+                    <p>Atención en Tuxpan, Veracruz.</p>
+                    <p>Ubicación exacta disponible al confirmar cita.</p>
                 </div>
-
                 <div class="map-wrapper">
-
-                    <iframe
-                        title="Mapa general de Tuxpan, Veracruz"
-                        src="https://www.google.com/maps?ll=20.9561,-97.4074&z=13&t=m&output=embed"
-                        loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-
+                    <iframe title="Mapa general de Tuxpan, Veracruz" src="https://www.google.com/maps?ll=20.9561,-97.4074&z=13&t=m&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-
             </div>
-
         </div>
-
     </section>
-
     <!-- FAQ -->
-
     <section class="faq">
-
         <div class="container">
-
             <div class="section-title">
-
                 <span>FAQ</span>
-
-                <h2>
-                    Preguntas Frecuentes
-                </h2>
-
+                <h2>Preguntas Frecuentes</h2>
             </div>
-
             <div class="faq-list">
-
                 <details class="faq-item" open>
                     <summary>¿Cuánto duran las uñas acrílicas?</summary>
                     <p>Duran de 2 a 3 semanas. Recomendamos retocar cada 3 semanas para mantenerlas impecables.</p>
                 </details>
-
                 <details class="faq-item">
                     <summary>¿Duele aplicarse las uñas?</summary>
                     <p>No. El proceso es indoloro. Solo sentirás presión leve al limar la superficie natural.</p>
                 </details>
-
                 <details class="faq-item">
                     <summary>¿Cuánto tiempo dura una cita?</summary>
                     <p>Depende del servicio: manicure ~45 min, acrílicas ~2 hrs, polygel ~2.5 hrs.</p>
                 </details>
-
                 <details class="faq-item">
                     <summary>¿Aceptan tarjeta de crédito/débito?</summary>
                     <p>Sí, aceptamos efectivo, transferencia y tarjetas de crédito/débito.</p>
                 </details>
-
                 <details class="faq-item">
                     <summary>¿Cómo agendo una cita?</summary>
                     <p>Escríbenos al <a href="https://wa.me/527831377679">WhatsApp</a> y te confirmamos horario disponible.</p>
                 </details>
-
             </div>
-
         </div>
-
     </section>
-
     <!-- FOOTER -->
-
     <footer class="footer">
-
         <div class="container">
-
             <h3>Aura Nails Studio</h3>
-
-            <p>
-                El lujo comienza en tus manos.
-            </p>
-
-            <p>
-                © <span class="current-year">2026</span> Aura Nails Studio
-            </p>
-
+            <p>El lujo comienza en tus manos.</p>
+            <p>© <span class="current-year">2026</span> Aura Nails Studio</p>
         </div>
-
     </footer>
-
     <!-- BOTÓN FLOTANTE -->
-
-    <a
-        href="https://wa.me/527831377679?text=Hola%20Aura%20Nails%20Studio,%20me%20gustar%C3%ADa%20agendar%20una%20cita."
-        class="whatsapp-float"
-        aria-label="Agendar cita por WhatsApp"
-        target="_blank">
-
-        <svg
-            aria-hidden="true"
-            viewBox="0 0 32 32"
-            xmlns="http://www.w3.org/2000/svg">
-
+    <a href="https://wa.me/527831377679?text=Hola%20Aura%20Nails%20Studio,%20me%20gustar%C3%ADa%20agendar%20una%20cita." class="whatsapp-float" aria-label="Agendar cita por WhatsApp" target="_blank">
+        <svg aria-hidden="true" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
             <path d="M19.11 17.48c-.27-.14-1.62-.8-1.87-.89-.25-.09-.43-.14-.62.14-.18.27-.71.89-.87 1.07-.16.18-.32.21-.59.07-.27-.14-1.15-.42-2.19-1.35-.81-.72-1.36-1.62-1.52-1.89-.16-.27-.02-.42.12-.56.13-.13.27-.32.41-.48.14-.16.18-.27.27-.46.09-.18.05-.34-.02-.48-.07-.14-.62-1.48-.85-2.03-.22-.53-.45-.46-.62-.47h-.53c-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.28s.98 2.65 1.12 2.83c.14.18 1.93 2.94 4.67 4.12.65.28 1.16.45 1.56.58.66.21 1.25.18 1.72.11.52-.08 1.62-.66 1.85-1.3.23-.64.23-1.19.16-1.3-.07-.11-.25-.18-.52-.32Z"/>
             <path d="M16.01 3.2c-7.05 0-12.78 5.73-12.78 12.78 0 2.25.59 4.45 1.72 6.38L3.12 28.8l6.62-1.74a12.72 12.72 0 0 0 6.27 1.6c7.05 0 12.78-5.73 12.78-12.78S23.06 3.2 16.01 3.2Zm0 23.3c-2.02 0-3.99-.54-5.72-1.56l-.41-.24-3.93 1.03 1.05-3.83-.27-.43a10.51 10.51 0 1 1 9.28 5.03Z"/>
-
         </svg>
-
     </a>
-
     <script src="js/main.js"></script>
-
 </body>
 </html>

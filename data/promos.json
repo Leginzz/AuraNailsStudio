@@ -2,18 +2,18 @@
   {
     "title": "Dúo Perfecto",
     "price": "$499",
-    "items": ["Manicure completo", "Pedicure completo", "Esmaltado semipermanente en manos y pies"],
+    "items": ["Manicure completo", "Color completo", "Esmaltado semipermanente en manos"],
     "vigencia": "Julio 2026"
   },
   {
     "title": "Relleno + Gelish",
-    "price": "$549",
+    "price": "$649",
     "items": ["Relleno de uñas acrílicas", "Esmaltado gelish", "Diseño sólido incluido"],
     "vigencia": "Julio 2026"
   },
   {
     "title": "Retiro + Nuevo Set",
-    "price": "$599",
+    "price": "$799",
     "items": ["Retiro de acrílico", "Uñas acrílicas nuevas", "Esmaltado gelish + diseño sólido"],
     "vigencia": "Julio 2026"
   }

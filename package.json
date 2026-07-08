@@ -1,0 +1,15 @@
+{
+  "name": "aura-nails-studio",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lint": "eslint js/main.js",
+    "lint:html": "html-validate index.html",
+    "lint:all": "npm run lint && npm run lint:html"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.6.0",
+    "html-validate": "^9.0.0"
+  }
+}

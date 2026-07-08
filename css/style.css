@@ -35,6 +35,7 @@ a{
 a:focus-visible,
 button:focus-visible,
 .menu-toggle:focus-visible,
+.theme-toggle:focus-visible,
 .btn-header:focus-visible,
 .btn-primary:focus-visible,
 .btn-secondary:focus-visible,
@@ -558,7 +559,7 @@ section{
 /* ==========================
    MODO OSCURO
 ========================== */
-.dark-mode body{
+body.dark-mode{
     background:var(--black);
     color:var(--white);
 }

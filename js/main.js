@@ -46,14 +46,16 @@ if (menuToggle && navLinks) {
         menuToggle.setAttribute("aria-expanded", isOpen);
         menuToggle.setAttribute("aria-label", isOpen ? "Cerrar men\u00FA" : "Abrir men\u00FA");
     });
+    function closeMenu() {
+        navLinks.classList.remove("active");
+        menuToggle.classList.remove("active");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Abrir men\u00FA");
+    }
     navLinks.querySelectorAll("a").forEach((link) => {
-        link.addEventListener("click", () => {
-            navLinks.classList.remove("active");
-            menuToggle.classList.remove("active");
-            menuToggle.setAttribute("aria-expanded", "false");
-            menuToggle.setAttribute("aria-label", "Abrir men\u00FA");
-        });
+        link.addEventListener("click", closeMenu);
     });
+    themeToggle.addEventListener("click", closeMenu);
 }
 window.addEventListener("scroll", () => {
     header.classList.toggle("scrolled", window.scrollY > 50);

@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://auranails.studio/sitemap.xml
+Sitemap: https://leginzz.github.io/AuraNailsStudio/sitemap.xml

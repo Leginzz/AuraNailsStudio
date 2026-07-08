@@ -1,11 +1,11 @@
 [
-  { "emoji": "💅", "name": "Uñas Acrílicas", "price": "$650" },
-  { "emoji": "💎", "name": "Polygel", "price": "$850" },
+  { "emoji": "💅", "name": "Uñas Acrílicas", "price": "$450" },
+  { "emoji": "💎", "name": "Polygel", "price": "$450" },
   { "emoji": "✨", "name": "Gel Semipermanente", "price": "$450" },
-  { "emoji": "🎨", "name": "Nail Art", "price": "Desde $350" },
-  { "emoji": "🦶", "name": "Pedicure", "price": "$350" },
-  { "emoji": "🤍", "name": "Manicure", "price": "$250" },
+  { "emoji": "🎨", "name": "Nail Art", "price": "Desde $550" },
+  { "emoji": "🦶", "name": "Pedicure", "price": "Consultar" },
+  { "emoji": "🤍", "name": "Manicure", "price": "$350" },
   { "emoji": "🔄", "name": "Retiro de Acrílico", "price": "$300" },
-  { "emoji": "💎", "name": "Aplicación de Piedrería", "price": "Desde $150" },
+  { "emoji": "💎", "name": "Aplicación de Piedrería", "price": "Consultar" },
   { "emoji": "⭐", "name": "Diseños Personalizados", "price": "Consultar" }
 ]

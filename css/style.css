@@ -586,6 +586,16 @@ section{
 }
 .dark-mode .faq-item summary{color:var(--white);}
 .dark-mode .faq-item p{color:#bbb;}
+.dark-mode .section-title span,
+.dark-mode .service-price,
+.dark-mode .stat-card h3,
+.dark-mode .testimonial-card p:first-child,
+.dark-mode .contact-info a,
+.dark-mode .promo-price,
+.dark-mode .promo-list li::before,
+.dark-mode .faq-item summary::after,
+.dark-mode .faq-item a{color:var(--gold);}
+.dark-mode .btn-secondary{border-color:rgba(255,255,255,.3);color:rgba(255,255,255,.85);}
 @media(max-width:768px){
     .hero h1{font-size:3rem;}
     .section-title h2{font-size:2.2rem;}

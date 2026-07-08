@@ -626,7 +626,7 @@ body.dark-mode{
     .nav-links li{width:100%;}
     .nav-links a{
         display:block;
-        padding:14px 10px;
+        padding:16px 12px;
         text-align:center;
         border-radius:12px;
     }
@@ -658,6 +658,33 @@ body.dark-mode{
         height:58px;
     }
     .whatsapp-float svg{width:31px;height:31px;}
+}
+@media(max-width:480px){
+    section{padding:60px 0}
+    .hero{min-height:92vh}
+    .hero h1{font-size:2.2rem}
+    .hero p{font-size:1rem;margin-top:14px}
+    .hero-buttons{margin-top:25px;gap:12px}
+    .section-title{margin-bottom:40px}
+    .section-title h2{font-size:1.7rem}
+    .btn-primary,.btn-secondary{padding:11px 20px;font-size:.95rem}
+    .service-card{padding:24px 18px}
+    .stat-card{padding:24px}
+    .stat-card h3{font-size:2.2rem}
+    .promo-card{padding:26px 18px}
+    .testimonial-card{padding:22px 18px}
+    .about-text{font-size:1rem}
+    .cta h2{font-size:2rem}
+    .gallery-grid{gap:8px}
+    .gallery-grid img{margin-bottom:10px}
+    .contact-info p{font-size:.95rem}
+    .location-block{margin-top:22px;padding-top:18px}
+    .location-block h3{font-size:1.5rem}
+    .map-wrapper iframe{height:260px}
+    .faq-item summary{padding:14px 16px;font-size:.95rem}
+    .faq-item p{padding:0 16px 14px}
+    .footer{padding:40px 20px}
+    .footer h3{font-size:1.5rem}
 }
 @media (prefers-reduced-motion: no-preference) {
     .service-card,
